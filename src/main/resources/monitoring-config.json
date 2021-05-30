@@ -1,0 +1,46 @@
+{
+  "clusters": [
+    {
+      "project": "",
+      "name": "",
+      "zone": "",
+      "enabled": true,
+      "events": {
+        "enabled": true,
+        "types": {
+          "readiness-probe": false,
+          "liveness-probe": true,
+          "oom-kill": true
+        }
+      },
+      "notifications": {
+        "events": {
+          "enabled": true,
+          "slack-webhook": ""
+        },
+        "deployments": {
+          "enabled": true,
+          "slack-webhook": ""
+        },
+        "maintenance": {
+          "enabled": true,
+          "slack-webhook": ""
+        }
+      },
+      "expected-workloads": {
+        "deployments": [
+          ""
+        ],
+        "stateful-sets": [
+          ""
+        ]
+      }
+    }
+  ],
+  "slack-webhooks": [
+    {
+      "name": "",
+      "url": "https://hooks.slack.com/.."
+    }
+  ]
+}
